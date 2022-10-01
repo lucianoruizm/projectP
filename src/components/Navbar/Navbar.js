@@ -19,9 +19,9 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='img-logo'/>
           <nav className="desktop-navbar">
                 <ul className='list-container'>
-                  <li><a href="">Inicio</a></li>
-                  <li><a href="">Productos</a></li>
-                  <li><a href="">Contacto</a></li>
+                  <li>Inicio</li>
+                  <li>Productos</li>
+                  <li>Contacto</li>
                 </ul>
           </nav>
           <Hamburger onToggle={handleToggle} />
@@ -30,9 +30,9 @@ const Navbar = () => {
       <div className={`${navbarOpen ? " show-menu" : "hide-menu"}`}>
           <nav className="modal-navbar">
             <ul className="modal-navbar__items">
-              <li><a href="">Inicio</a></li>
-              <li><a href="">Productos</a></li>
-              <li><a href="">Contacto</a></li>
+              <li>Inicio</li>
+              <li>Productos</li>
+              <li>Contacto</li>
             </ul>
           </nav>
       </div>
