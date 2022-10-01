@@ -12,7 +12,7 @@ const Card = ({ results }) => {
                   key={id}
                   className="cards-container"
                 >
-                  <div className="card-container"
+                  <div className="card"
                   >
                       <img className="card-img" src={img} alt="" />
                       <div className="card-body">
