@@ -5,6 +5,7 @@ import './App.css';
 import Card from "./components/Card/Card";
 import Navbar from "./components/Navbar/Navbar";
 import Search from "./components/Search/Search";
+import SlideshowGallery from "./components/SlideshowGallery/SlideshowGallery";
 
 function App() {
   let [fetchedData, updateFetchedData] = useState([ ...productList]);
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <SlideshowGallery />
       <Search onSearch={handleSearch} />
         <h1>Nuestros Productos</h1>
         <div className="container-1">
