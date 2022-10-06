@@ -1,0 +1,14 @@
+.w-100 {
+    margin: 1px auto auto;
+    height: 400px;
+}
+@media (min-width: 435px){
+    .w-100 {
+        height: 600px;
+    }
+}
+@media (min-width: 992px){
+    .w-100 {
+        height: 700px;
+    }
+}
