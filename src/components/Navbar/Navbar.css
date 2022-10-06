@@ -20,12 +20,12 @@ li:hover{
     color: var(--grayish-blue);
 }
 
-a {
+/* a {
     color: inherit;
 }
 a:hover {
     color: inherit;
-}
+} */
 
 .desktop-navbar{
     display: none;
