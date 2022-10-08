@@ -1,3 +1,5 @@
+Proyecto de React de productos presentados con cards, y un buscador con filtrado por keywords.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
