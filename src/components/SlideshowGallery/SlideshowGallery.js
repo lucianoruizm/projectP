@@ -24,8 +24,8 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Bienvenidos a Pañalera Mi Bebé! 💚</h3>
+          <p>Pañales, ropa y accesorios para los más pequeñitos.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,8 +36,8 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>¿Ya sabes que pañal vas a elegir para tu recién nacido?</h3>
+          <p>En pañalera Mi Bebé, podés contar con diversas marcas.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -48,9 +48,9 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Ropa para tu pequeño!</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -62,9 +62,9 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>También contamos con los mejores tejidos!</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Desde gorros hasta peluches!
           </p>
         </Carousel.Caption>
       </Carousel.Item>
