@@ -1,4 +1,4 @@
-Proyecto de React de productos presentados con cards, y un buscador con filtrado por keywords.
+Proyecto de React responsive design de productos presentados con cards, y un buscador por keywords. 
 
 # Getting Started with Create React App
 
