@@ -6,7 +6,8 @@ export const data = [
       size: "xg",
       img: "./01-img.jpg",
       description: "36 pañales descartables",
-      diapers: "Babysec"
+      brand: "Babysec",
+      category: "Diaper"
     },
     {
       id: 2,
@@ -15,7 +16,8 @@ export const data = [
       size: "m",
       img: "./02-img.jpg",
       description: "Pañales triple protección",
-      diapers: "Huggies"
+      brand: "Huggies",
+      category: "Diaper"
     },
     
     { id: 3,
@@ -24,7 +26,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      fabrics: "Muñeco"
+      category: "Tejido"
     },
     
     { id: 4,
@@ -33,7 +35,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      clothing: "Body"
+      category: "Clothing"
     },
   
     {
@@ -43,7 +45,8 @@ export const data = [
       size: "m",
       img: "./02-img.jpg",
       description: "Pañales triple protección",
-      diapers: "Huggies"
+      brand: "Huggies",
+      category: "Diaper"
     },
     
     { id: 6,
@@ -52,7 +55,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      fabrics: "Muñeco"
+      category: "Tejido"
     },
     
     { id: 7,
@@ -61,7 +64,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      clothing: "Body"
+      category: "Clothing"
     },
   
     {
@@ -71,7 +74,8 @@ export const data = [
       size: "xg",
       img: "./01-img.jpg",
       description: "36 pañales descartables",
-      diapers: "Babysec"
+      brand: "Babysec",
+      category: "Diaper"
     },
     {
       id: 9,
@@ -80,7 +84,8 @@ export const data = [
       size: "m",
       img: "./02-img.jpg",
       description: "Pañales triple protección",
-      diapers: "Huggies"
+      brand: "Huggies",
+      category: "Diaper"
     },
     
     { id: 10,
@@ -89,7 +94,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      fabrics: "Muñeco"
+      category: "Clothing"
     },
     
     { id: 11,
@@ -98,7 +103,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      clothing: "Body"
+      category: "Clothing"
     },
   
     {
@@ -108,6 +113,7 @@ export const data = [
       size: "xg",
       img: "./01-img.jpg",
       description: "36 pañales descartables",
-      diapers: "Babysec"
+      brand: "Babysec",
+      category: "Diaper"
     },
   ]

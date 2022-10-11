@@ -1,5 +1,38 @@
+a {
+    color: black;
+}
+
 .contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px 0;
+}
+
+.social-media-container {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-icons {
+    margin: auto;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-media-icons {
+    font-size: 5em;
+}
+
+.ig-icon{
+    color: #af2828;
+}
+
+.fb-icon {
+    color: #4c28af;
+}
+
+.ig-icon:hover, .fb-icon:hover{
+    color: black;
 }
