@@ -19,7 +19,9 @@ function App() {
       const search = productList.filter((product) => {
         return (
           product.name.toLowerCase().includes(query) ||
-          product.description.toLowerCase().includes(query)
+          product.description.toLowerCase().includes(query) ||
+          product.name.toUpperCase().includes(query) ||
+          product.description.toUpperCase().includes(query)
         );
       });
 

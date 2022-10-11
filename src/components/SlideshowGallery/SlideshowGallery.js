@@ -48,10 +48,7 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Ropa para tu pequeño!</h3>
-          <p>
-            
-          </p>
+          <h3>Ropa para tu pequeño/a!</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -65,20 +62,6 @@ function ControlledCarousel() {
           <h3>También contamos con los mejores tejidos!</h3>
           <p>
             Desde gorros hasta peluches!
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={bgimg5}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

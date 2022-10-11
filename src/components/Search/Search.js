@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './Search.css';
 
-const Search2 = ({onSearch}) => {
+const Search = ({onSearch}) => {
 
     const [value, setValue] = useState('')
     
@@ -22,4 +22,4 @@ const Search2 = ({onSearch}) => {
     )
 }
 
-export default Search2;
+export default Search;

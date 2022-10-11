@@ -1,5 +1,5 @@
 .w-100 {
-    margin: 1px auto auto;
+    margin: 5px auto auto;
     height: 400px;
 }
 @media (min-width: 435px){
@@ -9,6 +9,7 @@
 }
 @media (min-width: 992px){
     .w-100 {
-        height: 700px;
+        width: 90% !important;
+        height: 660px;
     }
 }
