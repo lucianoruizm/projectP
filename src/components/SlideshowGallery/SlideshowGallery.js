@@ -2,7 +2,6 @@ import bgimg from '../../images/bg-pmbb.jpg';
 import bgimg2 from '../../images/bg-pmbb2.jpg';
 import bgimg3 from '../../images/bg-pmbb3.jpg';
 import bgimg4 from '../../images/bg-pmbb4.jpg';
-import bgimg5 from '../../images/bg-pmbb5.jpg';
 
 import React, { useState } from 'react';
 import './SlideshowGallery.css';
