@@ -32,10 +32,14 @@ p {
         font-size: 1.3em;
     }
     .w-100 {
-        width: 90% !important;
+        width: 78% !important;
         height: 660px;
     }
     .carousel-inner {
-        background-color: var(--secondary-color);
+        width: 90%;
+        margin: auto;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        background-color: var(--main-color);
     }
 }

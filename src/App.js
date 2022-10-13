@@ -14,14 +14,13 @@ function App() {
 
   function handleSearch(e) {
     const query = e.target.value;
+    query.toUpperCase();
 
     if (!!query) {
       const search = productList.filter((product) => {
         return (
-          product.name.toLowerCase().includes(query) ||
-          product.description.toLowerCase().includes(query) ||
-          product.name.toUpperCase().includes(query) ||
-          product.description.toUpperCase().includes(query)
+          product.name.includes(query) ||
+          product.description.includes(query)
         );
       });
 

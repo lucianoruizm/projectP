@@ -9,6 +9,11 @@ a {
     margin: 50px 0;
 }
 
+.contact-section p {
+    margin: 5px;
+    text-align: center;
+}
+
 .social-media-container {
     display: flex;
     gap: 20px;
