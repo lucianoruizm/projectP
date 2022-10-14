@@ -1,0 +1,46 @@
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+button {
+    min-width: 50px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+@media (max-width: 320px){
+    button {
+        width: 60px;
+        font-size: .9rem;
+        padding: 5px;
+    }
+}
+
+button:hover {
+    background-color: var(--main-color-dark);
+}
+
+.all-btn {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.diapers-btn {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.crochet-btn {
+    color: white;
+    background-color: var(--skyblue-color);
+}
+
+.clothes-btn {
+    color: white;
+    background-color: var(--grayish-blue);
+}

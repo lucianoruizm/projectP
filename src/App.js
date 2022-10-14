@@ -54,8 +54,8 @@ function App() {
       <div id="gallery">
         <SlideshowGallery />
       </div>
-      <Search onSearch={handleSearch} />
       <h1 id="h1">Nuestros Productos</h1>
+      <Search onSearch={handleSearch} />
       <Filter onFilter={handleFilter}/>
       <div className="container-1">
         <Card results={fetchedData} />

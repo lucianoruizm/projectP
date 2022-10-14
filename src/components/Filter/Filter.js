@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Filter.css';
 
 
 const Filter = ({onFilter}) => {
@@ -27,11 +28,11 @@ const Filter = ({onFilter}) => {
     }
 
     return (
-    <div>
-        <button onClick={handleClick} name="All" value="">All</button>
-        <button onClick={handleClick} name="Diapers" value="Diapers">Diapers</button>
-        <button onClick={handleClick} name="Crochet" value="Crochet">Crochet</button>
-        <button onClick={handleClick} name="Clothes" value="Clothes">Clothes</button>
+    <div className="btn-container">
+        <button className="all-btn" onClick={handleClick} name="All" value="">All</button>
+        <button className="diapers-btn" onClick={handleClick} name="Diapers" value="Diapers">Diapers</button>
+        <button className="crochet-btn" onClick={handleClick} name="Crochet" value="Crochet">Crochet</button>
+        <button className="clothes-btn" onClick={handleClick} name="Clothes" value="Clothes">Clothes</button>
     </div>
   )
 }
