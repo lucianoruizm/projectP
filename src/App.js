@@ -8,6 +8,7 @@ import Search from "./components/Search/Search";
 import SlideshowGallery from "./components/SlideshowGallery/SlideshowGallery";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import Filter from "./components/Filter/Filter";
 
 function App() {
   let [fetchedData, updateFetchedData] = useState([ ...productList]);
@@ -26,20 +27,42 @@ function App() {
 
       updateFetchedData(search);
     } else {
-      updateFetchedData(productList)
+      updateFetchedData(productList);
     }
-}
+  }
+
+  function handleFilter(e) {
+    const query = e.target.value;
+    console.log(query)
+
+    if (!!query) {
+      const filterCategory = productList.filter((product) => {
+        return (
+          product.category.includes(query)
+        );
+      });
+  
+      updateFetchedData(filterCategory);
+    } else {
+      updateFetchedData(productList);
+    }
+  }
 
   return (
     <div className="App">
       <Navbar />
-      <SlideshowGallery />
+      <div id="gallery">
+        <SlideshowGallery />
+      </div>
       <Search onSearch={handleSearch} />
-      <h1>Nuestros Productos</h1>
+      <h1 id="h1">Nuestros Productos</h1>
+      <Filter onFilter={handleFilter}/>
       <div className="container-1">
         <Card results={fetchedData} />
       </div>
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

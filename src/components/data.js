@@ -7,7 +7,7 @@ export const data = [
       img: "./01-img.jpg",
       description: "36 pañales descartables",
       brand: "Babysec",
-      category: "Diaper"
+      category: "Diapers"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export const data = [
       img: "./02-img.jpg",
       description: "Pañales triple protección",
       brand: "Huggies",
-      category: "Diaper"
+      category: "Diapers"
     },
     
     { id: 3,
@@ -26,7 +26,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      category: "Tejido"
+      category: "Crochet"
     },
     
     { id: 4,
@@ -35,7 +35,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      category: "Clothing"
+      category: "Clothes"
     },
   
     {
@@ -46,7 +46,7 @@ export const data = [
       img: "./02-img.jpg",
       description: "Pañales triple protección",
       brand: "Huggies",
-      category: "Diaper"
+      category: "Diapers"
     },
     
     { id: 6,
@@ -55,7 +55,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      category: "Tejido"
+      category: "Crochet"
     },
     
     { id: 7,
@@ -64,7 +64,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      category: "Clothing"
+      category: "Clothes"
     },
   
     {
@@ -75,7 +75,7 @@ export const data = [
       img: "./01-img.jpg",
       description: "36 pañales descartables",
       brand: "Babysec",
-      category: "Diaper"
+      category: "Diapers"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ export const data = [
       img: "./02-img.jpg",
       description: "Pañales triple protección",
       brand: "Huggies",
-      category: "Diaper"
+      category: "Diapers"
     },
     
     { id: 10,
@@ -94,7 +94,7 @@ export const data = [
       size: "20 cm",
       img: "./03-img.jpg",
       description: "Conejos de tejido",
-      category: "Clothing"
+      category: "Crochet"
     },
     
     { id: 11,
@@ -103,7 +103,7 @@ export const data = [
       size: "1",
       img: "./04-img.jpg",
       description: "Body + Cambiador",
-      category: "Clothing"
+      category: "Clothes"
     },
   
     {
@@ -114,6 +114,6 @@ export const data = [
       img: "./01-img.jpg",
       description: "36 pañales descartables",
       brand: "Babysec",
-      category: "Diaper"
+      category: "Diapers"
     },
   ]

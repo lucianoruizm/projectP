@@ -7,7 +7,7 @@ p {
 }
 
 .w-100 {
-    margin: 5px auto auto;
+    margin: 60px auto auto;
     height: 400px;
 }
 
@@ -19,6 +19,7 @@ p {
         font-size: 1em;
     }
     .w-100 {
+        margin-top: 40px;
         height: 600px;
     }
 }
@@ -32,11 +33,11 @@ p {
         font-size: 1.3em;
     }
     .w-100 {
-        width: 78% !important;
-        height: 660px;
+        margin-top: 0;
+        width: 70% !important;
+        height: 630px;
     }
     .carousel-inner {
-        width: 90%;
         margin: auto;
     }
     .carousel-control-next, .carousel-control-prev {
