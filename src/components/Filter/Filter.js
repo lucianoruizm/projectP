@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import './Filter.css';
 
 
 const Filter = ({onFilter}) => {
   
-    const [value, setValue] = useState('')
+    // const [value, setValue] = useState('')
 
     function handleClick (e){
         // const op = e.target.name;
-        setValue(e.target.value)
+        // setValue(e.target.value)
         // switch (op) {
         //     case "Diapers":
         //         setValue("Diapers");
