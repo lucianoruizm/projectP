@@ -40,80 +40,77 @@ export const data = [
   
     {
       id: 5,
-      name: "Huggies Natural Care",
+      name: "Mochila",
       price: "$xxxx",
-      size: "m",
-      img: "./02-img.jpg",
-      description: "Pañales triple protección",
-      brand: "Huggies",
-      category: "Diapers"
+      size: "",
+      img: "./05-img.jpg",
+      description: "Mochilas- Bolsos maternales.",
+      brand: "Sueños de Jazmín",
+      category: "Others"
     },
     
     { id: 6,
-      name: "Peluches",
+      name: "Body",
       price: "$xxxx",
-      size: "20 cm",
-      img: "./03-img.jpg",
-      description: "Conejos de tejido",
-      category: "Crochet"
+      size: "",
+      img: "./06-img.jpg",
+      description: "Body manga larga",
+      category: "Clothes"
     },
     
     { id: 7,
-      name: "Celestina Baby",
+      name: "Polar",
       price: "$xxxx",
-      size: "1",
-      img: "./04-img.jpg",
-      description: "Body + Cambiador",
-      category: "Clothes"
+      size: "",
+      img: "./07-img.jpg",
+      description: "Amigurumis, muñecos de apego. Osos escandalosos.",
+      category: "Crochet"
     },
   
     {
       id: 8,
-      name: "Babysec Premium",
+      name: "Buzo",
       price: "$xxxx",
-      size: "xg",
-      img: "./01-img.jpg",
-      description: "36 pañales descartables",
-      brand: "Babysec",
-      category: "Diapers"
+      size: "",
+      img: "./08-img.jpg",
+      description: "Abrigo para bebé",
+      category: "Clothes"
     },
     {
       id: 9,
-      name: "Huggies Natural Care",
+      name: "Bolsa anticolicos",
       price: "$xxxx",
-      size: "m",
-      img: "./02-img.jpg",
-      description: "Pañales triple protección",
-      brand: "Huggies",
-      category: "Diapers"
+      size: "",
+      img: "./09-img.jpg",
+      description: "Bolsa confeccionada con gabardina de algodón, ",
+      category: "Others"
     },
     
     { id: 10,
-      name: "Peluches",
+      name: "Moom",
       price: "$xxxx",
-      size: "20 cm",
-      img: "./03-img.jpg",
-      description: "Conejos de tejido",
-      category: "Crochet"
+      size: "0",
+      img: "./10-img.jpg",
+      description: "Sweater para bebé",
+      category: "Clothes"
     },
     
     { id: 11,
-      name: "Celestina Baby",
+      name: "Pilusos",
       price: "$xxxx",
-      size: "1",
-      img: "./04-img.jpg",
-      description: "Body + Cambiador",
+      size: "",
+      img: "./11-img.jpg",
+      description: "Gorritos",
       category: "Clothes"
     },
   
     {
       id: 12,
-      name: "Babysec Premium",
+      name: "Ranitas",
       price: "$xxxx",
       size: "xg",
-      img: "./01-img.jpg",
-      description: "36 pañales descartables",
-      brand: "Babysec",
-      category: "Diapers"
+      img: "./12-img.jpg",
+      description: "Ranitas lisas",
+      category: "Clothes"
     },
   ]

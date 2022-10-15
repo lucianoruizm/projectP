@@ -29,10 +29,10 @@ const Filter = ({onFilter}) => {
 
     return (
     <div className="btn-container">
-        <button className="all-btn" onClick={handleClick} name="All" value="">All</button>
-        <button className="diapers-btn" onClick={handleClick} name="Diapers" value="Diapers">Diapers</button>
+        <button className="all-btn" onClick={handleClick} name="All" value="">Todo</button>
+        <button className="diapers-btn" onClick={handleClick} name="Diapers" value="Diapers">Pañales</button>
         <button className="crochet-btn" onClick={handleClick} name="Crochet" value="Crochet">Crochet</button>
-        <button className="clothes-btn" onClick={handleClick} name="Clothes" value="Clothes">Clothes</button>
+        <button className="clothes-btn" onClick={handleClick} name="Clothes" value="Clothes">Atuendos</button>
     </div>
   )
 }
