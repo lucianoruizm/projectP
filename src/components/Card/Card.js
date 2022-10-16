@@ -1,3 +1,4 @@
+import { Heart } from '../Heart/Heart';
 import './Card.css';
 
 const Card = ({ results }) => {
@@ -16,7 +17,10 @@ const Card = ({ results }) => {
                   >
                       <img className="card-img" src={img} alt="" />
                       <div className="card-body">
-                          <div className="card-name">{name}</div>
+                          <div className='div-name-heart'>
+                              <div className="card-name">{name}</div>
+                              <Heart />
+                          </div>
                           <div className="card-info-container">
                               <div className="card-info"><strong>Precio:</strong> {price}</div>
                               <div className="card-info"><strong>Tamaño</strong>: {size}</div>

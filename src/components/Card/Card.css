@@ -18,6 +18,12 @@
     padding: 10px;
 }
 
+.div-name-heart {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
 .card-name{
     font-weight: 700;
     font-size: 1.5rem;
