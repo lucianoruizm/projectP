@@ -1,3 +1,7 @@
+.heart__icon {
+    color: rgb(218, 216, 216);
+}
+
 .heart__icon:hover{
     color: red;
     cursor: pointer;

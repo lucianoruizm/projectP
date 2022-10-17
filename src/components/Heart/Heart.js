@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AiOutlineHeart } from 'react-icons/ai';
+import { BsFillSuitHeartFill } from 'react-icons/bs';
 import './Heart.css';
 
 const Heart = ()=>{
@@ -19,7 +19,7 @@ const Heart = ()=>{
     }
   
     return (
-      <AiOutlineHeart className={className} onClick={handleClick} />
+      <BsFillSuitHeartFill className={className} onClick={handleClick} />
     )
   }
   
