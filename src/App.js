@@ -15,13 +15,13 @@ function App() {
 
   function handleSearch(e) {
     const query = e.target.value;
-    query.toUpperCase();
+    const queryLowerCase = query.toLowerCase();
 
-    if (!!query) {
+    if (!!queryLowerCase) {
       const search = productList.filter((product) => {
         return (
-          product.name.includes(query) ||
-          product.description.includes(query)
+          product.name.toLowerCase().includes(queryLowerCase) ||
+          product.description.toLowerCase().includes(queryLowerCase)
         );
       });
 
@@ -57,7 +57,7 @@ function App() {
       <h1 id="h1">Nuestros Productos</h1>
       <Search onSearch={handleSearch} />
       <Filter onFilter={handleFilter}/>
-      <div className="container-1">
+      <div className="grid-container">
         <Card results={fetchedData} />
       </div>
       <div id="contact">

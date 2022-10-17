@@ -23,7 +23,7 @@ h1{
   position: relative;
 }
 
-.container-1{
+.grid-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
   gap: 40px;
@@ -31,7 +31,7 @@ h1{
 }
 
 @media (max-width: 380px) {
-  .container-1 {
+  .grid-container {
     margin: 0;
   }
 }
