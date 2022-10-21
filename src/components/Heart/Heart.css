@@ -10,3 +10,9 @@
 .active {
     color: red;
 }
+
+@media (max-width: 380px){
+    .heart__icon {
+        font-size: 25px;
+    }
+}
