@@ -1,18 +1,12 @@
 .heart__icon {
     color: rgb(218, 216, 216);
+    cursor: pointer;
 }
 
 .heart__icon:hover{
     color: red;
-    cursor: pointer;
 }
 
 .active {
     color: red;
-}
-
-@media (max-width: 380px){
-    .heart__icon {
-        font-size: 25px;
-    }
 }

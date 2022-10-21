@@ -15,7 +15,6 @@ const Heart = ()=>{
     if (like === true) {
       className += ' active';
       console.log(like)
-      console.log('pintado')
     }
   
     return (
