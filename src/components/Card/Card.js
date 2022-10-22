@@ -19,7 +19,7 @@ const Card = ({ results }) => {
                       <div className="card-body">
                           <div className='div-name-heart'>
                               <div className="card-name">{name}</div>
-                              <Heart />
+                              <Heart card={x}/>
                           </div>
                           <div className="card-info-container">
                               <div className="card-info"><strong>Precio:</strong> {price}</div>
