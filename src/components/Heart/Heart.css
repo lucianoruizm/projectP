@@ -3,9 +3,9 @@
     cursor: pointer;
 }
 
-.heart__icon:hover{
+/* .heart__icon:hover{
     color: red;
-}
+} */
 
 .active {
     color: red;

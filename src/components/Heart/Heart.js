@@ -6,11 +6,26 @@ const Heart = ({ card })=>{
 
     const [like, setLike] = useState(false);
     let className = 'heart__icon';
-  
+
     function handleClick (e) {
       e.preventDefault();
+      addProductLocalStorage(card);
       setLike(!like);
     }
+
+    if (like === true) {
+      className += ' active';
+    }
+
+    // function handleClick (e) {
+    //   e.preventDefault();
+    //   setLike(!like);
+      // if (like === true) {
+      //   addProductLocalStorage(card);
+      // }
+    // }
+
+   
 
     function getProductLocalStorage() {
       let productList;
@@ -28,12 +43,6 @@ const Heart = ({ card })=>{
       localStorage.setItem('productList', JSON.stringify(productList))
       console.log(productList)
     }
-  
-    if (like === true) {
-      className += ' active';
-    }
-
-    console.log(like)
   
     return (
       <BsFillSuitHeartFill className={className} onClick={handleClick} />
