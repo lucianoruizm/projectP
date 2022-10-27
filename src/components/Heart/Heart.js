@@ -2,30 +2,34 @@ import { useState } from "react";
 import { BsFillSuitHeartFill } from 'react-icons/bs';
 import './Heart.css';
 
-const Heart = ({ card })=>{
+export const Heart = ({ productCard })=>{
 
-    const [like, setLike] = useState(false);
+    const [favs, setFavs] = useState([]);
     let className = 'heart__icon';
-
-    function handleClick (e) {
-      e.preventDefault();
-      addProductLocalStorage(card);
-      setLike(!like);
-    }
-
-    if (like === true) {
-      className += ' active';
-    }
 
     // function handleClick (e) {
     //   e.preventDefault();
     //   setLike(!like);
-      // if (like === true) {
-      //   addProductLocalStorage(card);
-      // }
+    //   if(like === true) {
+    //     addProductLocalStorage(card);
+    //   }
     // }
 
-   
+    // if (like === true) {
+    //   className += ' active';
+    // }
+
+    const onAdd = (product) => {
+      const exist = favs.find(x => x.id === product.id);
+      if(exist){
+        setFavs([...favs])
+        console.log('ya esta agregado');
+      } else {
+      setFavs([...favs, {...product}]);
+      console.log('agregado a favs');
+      addProductLocalStorage(productCard);
+      }
+    }
 
     function getProductLocalStorage() {
       let productList;
@@ -38,15 +42,12 @@ const Heart = ({ card })=>{
     }
 
     function addProductLocalStorage(product) {
-      const productList = getProductLocalStorage();
+      let productList = getProductLocalStorage()
       productList.push(product);
       localStorage.setItem('productList', JSON.stringify(productList))
-      console.log(productList)
     }
   
     return (
-      <BsFillSuitHeartFill className={className} onClick={handleClick} />
+      <BsFillSuitHeartFill className={className} onClick={onAdd} />
     )
-  }
-  
-  export {Heart}
+}
