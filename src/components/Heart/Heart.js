@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
 import './Heart.css';
 
-export const Heart = ({ productCard })=>{
+export const Heart = ({ props })=>{
 
     const [favs, setFavs] = useState([]);
+    const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
+
+    useEffect(() => {
+      if (getArray !== 0) {
+        setFavs([...getArray]);
+      }
+    }, []);
     // let className = 'heart__icon';
 
     // // function handleClick (e) {
@@ -51,18 +58,17 @@ export const Heart = ({ productCard })=>{
     //   console.log(productList);
     // }
 
-    const onAdd = () => {
+    const onAdd = (props) => {
       let array = favs;
       let addArray = true;
       array.map((item, key) => {
-        if (item === productCard.id) {
+        if (item === props.productI) {
           array.splice(key, 1);
           addArray = false;
         }
-        return addArray;
       });
       if (addArray) {
-        array.push(productCard.id);
+        array.push(props.productI);
       }
       setFavs([...array])
       console.log(addArray);
@@ -70,28 +76,17 @@ export const Heart = ({ productCard })=>{
 
       localStorage.setItem("favorites", JSON.stringify(favs));
 
-      let storage = localStorage.getItem('favItem' + (productCard.id) || '0');
+      let storage = localStorage.getItem('favItem' + (props.productI) || '0');
       if (storage == null) {
-        localStorage.setItem(('favItem' + (productCard.id)), JSON.stringify(productCard));
+        localStorage.setItem(('favItem' + (props.productI)), JSON.stringify(props.productProps));
       } else {
-        localStorage.removeItem('favItem' + (productCard.id));
+        localStorage.removeItem('favItem' + (props.productI));
       }
-    }
-
-    
+    }    
   
     return (
       <>
-        {favs.includes(productCard.i) ? (<BsSuitHeartFill 
-          onClick={() => onAdd({ productCard })}
-          style={{ color: 'red'}}
-        />
-        ) : (
-              <BsSuitHeart
-              onClick={() => onAdd({ productCard })}
-                style={{ color: 'red'}} 
-              />
-            )}
+      
       </>
     )
 }
