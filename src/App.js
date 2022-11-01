@@ -9,6 +9,7 @@ import SlideshowGallery from "./components/SlideshowGallery/SlideshowGallery";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import Filter from "./components/Filter/Filter";
+import { FavoritesPage } from "./pages/FavoritesPage";
 
 function App() {
   let [fetchedData, updateFetchedData] = useState([ ...productList]);
@@ -59,6 +60,9 @@ function App() {
       <Filter onFilter={handleFilter}/>
       <div className="grid-container">
         <Card results={fetchedData} />
+      </div>
+      <div>
+        <FavoritesPage />
       </div>
       <div id="contact">
         <Contact />

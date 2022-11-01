@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
-import './Heart.css';
+// import { useEffect, useState } from "react";
+// import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
+// import './Heart.css';
 
-export const Heart = ({ props })=>{
+// export const Heart = ({ props })=>{
 
-    const [favs, setFavs] = useState([]);
-    const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
+//     const [favs, setFavs] = useState([]);
+//     const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
 
-    useEffect(() => {
-      if (getArray !== 0) {
-        setFavs([...getArray]);
-      }
-    }, []);
+//     useEffect(() => {
+//       if (getArray !== 0) {
+//         setFavs([...getArray]);
+//       }
+//     }, []);
     // let className = 'heart__icon';
 
     // // function handleClick (e) {
@@ -58,35 +58,35 @@ export const Heart = ({ props })=>{
     //   console.log(productList);
     // }
 
-    const onAdd = (props) => {
-      let array = favs;
-      let addArray = true;
-      array.map((item, key) => {
-        if (item === props.productI) {
-          array.splice(key, 1);
-          addArray = false;
-        }
-      });
-      if (addArray) {
-        array.push(props.productI);
-      }
-      setFavs([...array])
-      console.log(addArray);
-      console.log(favs);
+//     const onAdd = (props) => {
+//       let array = favs;
+//       let addArray = true;
+//       array.map((item, key) => {
+//         if (item === props.productI) {
+//           array.splice(key, 1);
+//           addArray = false;
+//         }
+//       });
+//       if (addArray) {
+//         array.push(props.productI);
+//       }
+//       setFavs([...array])
+//       console.log(addArray);
+//       console.log(favs);
 
-      localStorage.setItem("favorites", JSON.stringify(favs));
+//       localStorage.setItem("favorites", JSON.stringify(favs));
 
-      let storage = localStorage.getItem('favItem' + (props.productI) || '0');
-      if (storage == null) {
-        localStorage.setItem(('favItem' + (props.productI)), JSON.stringify(props.productProps));
-      } else {
-        localStorage.removeItem('favItem' + (props.productI));
-      }
-    }    
+//       let storage = localStorage.getItem('favItem' + (props.productI) || '0');
+//       if (storage == null) {
+//         localStorage.setItem(('favItem' + (props.productI)), JSON.stringify(props.productProps));
+//       } else {
+//         localStorage.removeItem('favItem' + (props.productI));
+//       }
+//     }    
   
-    return (
-      <>
+//     return (
+//       <>
       
-      </>
-    )
-}
+//       </>
+//     )
+// }
