@@ -1,5 +1,6 @@
 import { Divide as Hamburger } from 'hamburger-react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/panaleraMibbLogo-removebg-preview.png';
 
 import './Navbar.css';
@@ -19,15 +20,15 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='img-logo'/>
           <nav className="desktop-navbar">
                 <ul className='list-container'>
-                  <a href="#gallery">
+                  <Link to={"/"}>
                     <li>Inicio</li>
-                  </a>
+                  </Link>
                   <a href="#h1">
                     <li>Productos</li>
                   </a>
-                  <a href="#h1">
-                    <li>Favoritos</li>
-                  </a>
+                  <Link to={'/favoritos/'}>
+                  <li>Favoritos</li>
+                  </Link>
                   <a href="#contact">
                     <li>Contacto</li>
                   </a>
@@ -39,15 +40,15 @@ const Navbar = () => {
       <div className={`${navbarOpen ? " show-menu" : "hide-menu"}`}>
           <nav className="modal-navbar">
             <ul className="modal-navbar__items">
-              <a href="#gallery">
-                  <li>Inicio</li>
-              </a>
+              <Link to={"/"}>
+                      <li>Inicio</li>
+              </Link>
               <a href="#h1">
                   <li>Productos</li>
               </a>
-              <a href="#h1">
+              <Link to={'/favoritos'}>
                   <li>Favoritos</li>
-              </a>
+              </Link>
               <a href="#contact">
                   <li>Contacto</li>
               </a>

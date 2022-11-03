@@ -57,7 +57,7 @@ const Card = ({ results }) => {
                   >
                       <img className="card-img" src={img} alt="" />
                       <div className="card-body">
-                          <div className='div-name-heart'>
+                          <div className='heart'>
                               <div className="card-name">{name}</div>
                                 {favs.includes(i) ? (
                                       <BsSuitHeartFill 

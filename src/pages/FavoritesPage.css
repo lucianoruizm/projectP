@@ -1,0 +1,14 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo-favs-section {
+    height: 100px;
+    width: 140px;
+}
+
+.favs-title {
+    margin-bottom: 30px;
+}

@@ -18,10 +18,13 @@
     padding: 10px;
 }
 
-.div-name-heart {
+.heart {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
+.heart > {
+    cursor: pointer;
 }
 
 .card-name{
@@ -39,8 +42,8 @@
     font-size: 1rem;
 }
 
-@media (min-width: 992px) {
-    
+.heart {
+    cursor: pointer;
 }
 
 @media (max-width: 380px){
