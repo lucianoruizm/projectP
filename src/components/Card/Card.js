@@ -12,6 +12,7 @@ const Card = ({ results }) => {
       if (getArray !== 0) {
         setFavs([...getArray]);
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onAdd = (props) => {
