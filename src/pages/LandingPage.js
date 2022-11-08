@@ -4,11 +4,11 @@ import Card from "../components/Card/Card"
 import Filter from "../components/Filter/Filter"
 import Search from "../components/Search/Search"
 import SlideshowGallery from "../components/SlideshowGallery/SlideshowGallery"
-import { data as productList } from "../components/data";
+import { data as productList } from "../data";
 
 export const LandingPage = () => {
 
-    let [fetchedData, updateFetchedData] = useState([ ...productList]);
+  let [fetchedData, updateFetchedData] = useState([ ...productList]);
 
   function handleSearch(e) {
     const query = e.target.value;

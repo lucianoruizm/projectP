@@ -6,11 +6,19 @@ import './FavoritesPage.css';
 export const FavoritesPage = () => {
    
   let favList = [{}]; // Hay que quitar el valor por defecto cuando no hay cards
-    const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
-    for (let i = 0; i < getArray.length; i++) {
-        let x = getArray[i];
-        favList[i] = JSON.parse(localStorage.getItem('favItem' + [x]) || '');
-    }
+  const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
+  let exist;
+
+  for (let i = 0; i < getArray.length; i++) {
+      let x = getArray[i];
+      favList[i] = JSON.parse(localStorage.getItem('favItem' + [x]) || '');
+  }
+
+  if(Object.entries(getArray).length === 0){
+    exist = false;
+  } else {
+    exist = true;
+  }
 
   return (
     <div>
@@ -21,7 +29,7 @@ export const FavoritesPage = () => {
       </div>
       <h1 className="favs-title">Mis Favoritos</h1>
       <div className="grid-container">
-        <FavoritesCard results={favList} />
+        <FavoritesCard results={favList} exist={exist} />
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 import './FavoritesCard.css';
 
-export const FavoritesCard = ({ results }) => {
+export const FavoritesCard = ({ results, exist }) => {
     let display;
-    if(results){
+    if(exist){
     display = results.map((x) => {
         let { id, name, price, size, img, description } = x;
             return (
