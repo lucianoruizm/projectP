@@ -3,6 +3,7 @@ import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
 import './Card.css';
 
 const Card = ({ results }) => {
+  
     // Favorites
     const [favs, setFavs] = useState([]);
     const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
@@ -11,7 +12,6 @@ const Card = ({ results }) => {
       if (getArray !== 0) {
         setFavs([...getArray]);
       }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onAdd = (props) => {
@@ -19,13 +19,13 @@ const Card = ({ results }) => {
         let addArray = true;
         // eslint-disable-next-line array-callback-return
         array.map((item, key) => {
-          if (item === props.i) {
+          if (item === props.id) {
             array.splice(key, 1);
             addArray = false;
           }
         });
         if (addArray) {
-          array.push(props.i);
+          array.push(props.id);
         }
         setFavs([...array])
         console.log(addArray);
@@ -33,11 +33,11 @@ const Card = ({ results }) => {
   
         localStorage.setItem("favorites", JSON.stringify(favs));
   
-        let storage = localStorage.getItem('favItem' + (props.i) || '0');
+        let storage = localStorage.getItem('favItem' + (props.id) || '0');
         if (storage == null) {
-          localStorage.setItem(('favItem' + (props.i)), JSON.stringify(props.x));
+          localStorage.setItem(('favItem' + (props.id)), JSON.stringify(props.x));
         } else {
-          localStorage.removeItem('favItem' + (props.i));
+          localStorage.removeItem('favItem' + (props.id));
         }
     }
     // Favourites end--  
@@ -45,7 +45,7 @@ const Card = ({ results }) => {
     let display;
 
     if (results) {
-        display = results.map((x, i) => {
+        display = results.map((x) => {
             let { id, name, price, size, img, description } = x;
 
             return (
@@ -59,21 +59,21 @@ const Card = ({ results }) => {
                       <div className="card-body">
                           <div className='heart'>
                               <div className="card-name">{name}</div>
-                                {favs.includes(i) ? (
-                                      <BsSuitHeartFill 
-                                        onClick={() => onAdd({ x, i })}
+                                {favs.includes(id)? (
+                                      <BsSuitHeartFill
+                                        onClick={() => onAdd({ x, id })}
                                         style={{ color: 'red'}}
                                       />
                                     ) : (
                                           <BsSuitHeart
-                                            onClick={() => onAdd({ x, i })}
+                                            onClick={() => onAdd({ x, id })}
                                             style={{ color: 'red'}} 
                                           />
                                 )}
                           </div>
                           <div className="card-info-container">
                               <div className="card-info"><strong>Precio:</strong> {price}</div>
-                              <div className="card-info"><strong>Tamaño</strong>: {size}</div>
+                              {size? <div className="card-info"><strong>Tamaño</strong>: {size}</div> : ''}
                               <div className="card-info"><strong>Descripción:</strong> {description}</div>
                           </div>
                       </div>

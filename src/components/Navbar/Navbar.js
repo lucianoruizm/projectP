@@ -20,9 +20,9 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='img-logo'/>
           <nav className="desktop-navbar">
                 <ul className='list-container'>
-                  <Link to={"/"}>
+                  <a href="#gallery">
                     <li>Inicio</li>
-                  </Link>
+                  </a>
                   <a href="#h1">
                     <li>Productos</li>
                   </a>
@@ -40,9 +40,9 @@ const Navbar = () => {
       <div className={`${navbarOpen ? " show-menu" : "hide-menu"}`}>
           <nav className="modal-navbar">
             <ul className="modal-navbar__items">
-              <Link to={"/"}>
-                      <li>Inicio</li>
-              </Link>
+              <a href="#gallery">
+                    <li>Inicio</li>
+              </a>
               <a href="#h1">
                   <li>Productos</li>
               </a>

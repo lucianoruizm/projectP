@@ -2,7 +2,7 @@
 import './Filter.css';
 
 
-const Filter = ({onFilter}) => {
+const Filter = ({ onFilter }) => {
   
     // const [value, setValue] = useState('')
 

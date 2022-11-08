@@ -1,3 +1,6 @@
-.this {
-    background-color: cadetblue;
+.noFavsMsg-container{
+    margin: auto;
+    padding: 50px 10px;
+    font-size: 1.5rem;
+    text-align: center;
 }

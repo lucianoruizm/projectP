@@ -20,11 +20,16 @@ export const FavoritesPage = () => {
     exist = true;
   }
 
+  console.log(getArray);
+  console.log(favList);
+  console.log(exist);
+
   return (
     <div>
       <div className="logo-container">
         <Link to={'/'}>
             <img src={logo} alt='logo' className='logo-favs-section'/>
+            <p className="home-text">Volver al inicio</p>
         </Link>
       </div>
       <h1 className="favs-title">Mis Favoritos</h1>

@@ -1,6 +1,7 @@
 .logo-container {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -11,4 +12,8 @@
 
 .favs-title {
     margin-bottom: 30px;
+}
+
+.home-text:hover {
+    color: var(--secondary-color);
 }
