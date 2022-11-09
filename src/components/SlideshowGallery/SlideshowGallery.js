@@ -23,7 +23,7 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <div class="text-presentation-container">
+          <div class="text-presentation-container img1">
             <h3>Bienvenidos a Pañalera Mi Bebé!</h3>
             <p>Pañales, ropa y accesorios para los más pequeñitos.</p>
           </div>

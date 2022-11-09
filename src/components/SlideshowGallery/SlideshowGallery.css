@@ -1,7 +1,6 @@
 .text-presentation-container {
-    background-color: #9d03fc5d;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 h3 {
@@ -40,13 +39,9 @@ p {
     }
     .w-100 {
         margin-top: 0;
-        width: 70% !important;
-        height: 630px;
+        height: 660px;
     }
     .carousel-inner {
         margin: auto;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        background-color: var(--main-color);
     }
 }
