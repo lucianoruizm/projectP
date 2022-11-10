@@ -26,7 +26,7 @@ const Navbar = () => {
                   <a href="#h1">
                     <li>Productos</li>
                   </a>
-                  <Link to={'/favoritos/'}>
+                  <Link to={'/favoritos'}>
                   <li>Favoritos</li>
                   </Link>
                   <a href="#contact">

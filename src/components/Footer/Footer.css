@@ -3,7 +3,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color-cake);
     color: var(--white-grey);
     padding: 50px;
     margin-bottom: 0;

@@ -12,6 +12,12 @@ a {
 .contact-section p {
     margin: 5px;
     text-align: center;
+    font-size: 1em;
+}
+@media (min-width: 992px){
+    .contact-section p{
+        font-size: 1.2em;
+    }
 }
 
 .social-media-container {
@@ -31,7 +37,7 @@ a {
 }
 
 .ig-icon{
-    color: #af2828;
+    color: #c84d4d;
 }
 
 .fb-icon {

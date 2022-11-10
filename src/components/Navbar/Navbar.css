@@ -3,7 +3,7 @@
 header {
     height: 68px;
     padding: 0 10px;
-    background-color: var(--white-grey);
+    background-color: #f5f2fa;
     overflow: hidden;
     box-shadow: 0 0 3px 0 var(--grayish-blue);
     z-index: 999;

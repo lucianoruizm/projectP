@@ -7,6 +7,10 @@
     height: 100%;
     margin: auto;
     padding: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: var(--main-color-cake);
 }
 
 .card-img{
