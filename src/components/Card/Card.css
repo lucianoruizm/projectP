@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 .card:hover{
-    background-color: var(--main-color-cake);
+    background-color: var(--skyblue-color-cake);
 }
 
 .card-img{

@@ -20,13 +20,6 @@ li:hover{
     color: var(--grayish-blue);
 }
 
-/* a {
-    color: inherit;
-}
-a:hover {
-    color: inherit;
-} */
-
 .desktop-navbar{
     display: none;
 }
@@ -75,7 +68,7 @@ a:hover {
     padding: 10px;
 }
 .modal-navbar__items li:hover {
-    color: var(--white-grey);
+    color: var(--white);
     background-color: var(--secondary-color-opacity);
 }
 

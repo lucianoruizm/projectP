@@ -1,12 +1,12 @@
 :root {
   --main-color: #ff0080;
   --main-color-dark: #9c014ff5;
-  --main-color-cake: #c6bfe1;
+  --skyblue-color-cake: #c6bfe1;
   --secondary-color: #9d03fc;
   --secondary-color-opacity: #9d03fc88;
   --skyblue-color: #5bbbd9;
   --grayish-blue: hsl(220, 14%, 75%);
-  --white-grey: #f8feff;
+  --white: #f8feff;
   --white-glass: #f8feff69;
 }
 
@@ -22,17 +22,4 @@ h1{
 .App {
   width: 100%;
   position: relative;
-}
-
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
-  gap: 40px;
-  margin: 0 40px;
-}
-
-@media (max-width: 380px) {
-  .grid-container {
-    margin: 0;
-  }
 }

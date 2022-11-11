@@ -12,8 +12,9 @@
 
 .favs-title {
     margin-bottom: 30px;
+    color: var(--secondary-color);
 }
 
-.home-text:hover {
+.home-text {
     color: var(--secondary-color);
 }

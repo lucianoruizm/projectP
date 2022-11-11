@@ -1,0 +1,21 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    gap: 40px;
+    margin: 0 40px;
+}
+
+@media (max-width: 380px) {
+  .grid-container {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px){
+    .filter-cards-containers{
+        display: flex;
+    }
+    .grid-container{
+        flex: 2;
+    }
+}

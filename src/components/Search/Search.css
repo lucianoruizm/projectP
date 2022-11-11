@@ -6,23 +6,31 @@
 
 .input-search{
     border: none;
+    box-shadow: 0 0 5px -1px rgba(224,173,219,1);
+    -webkit-box-shadow: 0 0 5px -1px rgba(224,173,219,1);
+    -moz-box-shadow: 0 0 5px -1px rgba(224,173,219,1);
     border-radius: 5px;
     padding: 12px;
     outline: none;
-    color: white;
-    background-color: var(--main-color);
+    color: black;
+    background-color: var(--skyblue-color-cake);
 }
 
 .input-search:focus{
-    background-color: var(--main-color-dark);
+    background-color: #9d9aaf;
 }
 
 input::placeholder {
-    color: white;
+    color: var(--white);
 }
 
 @media(min-width: 992px){
     .input-search{
         width: 50%;
+    }
+}
+@media(min-width: 500px){
+    .input-search{
+        width: 60%;
     }
 }

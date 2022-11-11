@@ -5,6 +5,7 @@ import Filter from "../components/Filter/Filter"
 import Search from "../components/Search/Search"
 import SlideshowGallery from "../components/SlideshowGallery/SlideshowGallery"
 import { data as productList } from "../data";
+import './LandingPage.css';
 
 export const LandingPage = () => {
 
@@ -53,9 +54,13 @@ export const LandingPage = () => {
         </div>
         <h1 id="h1">Nuestros Productos</h1>
         <Search onSearch={handleSearch} />
-        <Filter onFilter={handleFilter}/>
-        <div className="grid-container">
-          <Card results={fetchedData} />
+        <div className="filter-cards-containers">
+          <div class="filter-container">
+            <Filter onFilter={handleFilter}/>
+          </div>
+          <div className="grid-container">
+            <Card results={fetchedData} />
+          </div>
         </div>
     </div>
   )
