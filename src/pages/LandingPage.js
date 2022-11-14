@@ -55,7 +55,7 @@ export const LandingPage = () => {
         <h1 id="h1">Nuestros Productos</h1>
         <Search onSearch={handleSearch} />
         <div className="filter-cards-containers">
-          <div class="filter-container">
+          <div className="filter-container">
             <Filter onFilter={handleFilter}/>
           </div>
           <div className="grid-container">

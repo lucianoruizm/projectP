@@ -5,7 +5,7 @@ import './FavoritesPage.css';
 
 export const FavoritesPage = () => {
    
-  let favList = [{}]; // Hay que quitar el valor por defecto cuando no hay cards
+  let favList = [{}];
   const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
   let exist;
 
