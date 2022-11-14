@@ -24,13 +24,13 @@ input::placeholder {
     color: var(--white);
 }
 
-@media(min-width: 992px){
-    .input-search{
-        width: 50%;
-    }
-}
 @media(min-width: 500px){
     .input-search{
         width: 60%;
+    }
+}
+@media(min-width: 992px){
+    .input-search{
+        width: 80%;
     }
 }
