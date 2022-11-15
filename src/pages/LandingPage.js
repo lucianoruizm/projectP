@@ -13,7 +13,7 @@ export const LandingPage = () => {
   const [fetchedData, updateFetchedData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(10);
+  const [productsPerPage] = useState(12);
   
   useEffect(() => {
     const fetchData = () => {

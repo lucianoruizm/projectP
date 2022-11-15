@@ -113,4 +113,123 @@ export const data = [
       description: "Ranitas lisas",
       category: "Clothes"
     },
+
+    {
+      id: 13,
+      name: "Gorro + Calzado",
+      price: "$xxxx",
+      size: "",
+      img: "./13-img.jpeg",
+      description: "Tejido de gorro + calzado",
+      brand: "",
+      category: "Crochet"
+    },
+    {
+      id: 14,
+      name: "Babero",
+      price: "$xxxx",
+      size: "",
+      img: "./14-img.jpeg",
+      description: "Babero para bebé",
+      brand: "",
+      category: "Others"
+    },
+    
+    { id: 15,
+      name: "Gorro + Saco",
+      price: "$xxxx",
+      size: "",
+      img: "./15-img.jpeg",
+      description: "Tejido de gorro + saco",
+      category: "Crochet"
+    },
+    
+    { id: 16,
+      name: "Maleta/Mochila Mickey",
+      price: "$xxxx",
+      size: "",
+      img: "./16-img.jpeg",
+      description: "Maleta/Mochila de Mickey Mouse",
+      category: "Others"
+    },
+  
+    {
+      id: 17,
+      name: "Huggies Protect Plus",
+      price: "$xxxx",
+      size: "xxg",
+      img: "./17-img.jpg",
+      description: "Pañales con más protección.",
+      brand: "Huggies",
+      category: "Diapers"
+    },
+    
+    { id: 18,
+      name: "Huggies Supreme Care",
+      price: "$xxxx",
+      size: "xg",
+      img: "./18-img.jpg",
+      description: "Pañales",
+      brand: "Huggies",
+      category: "Diapers"
+    },
+    
+    { id: 19,
+      name: "Estrella Baby",
+      price: "$xxxx",
+      size: "xg",
+      img: "./19-img.jpg",
+      description: "Pañales",
+      brand: "Estrella",
+      category: "Diapers"
+    },
+  
+    {
+      id: 20,
+      name: "Caja 'Te Amo'",
+      price: "$xxxx",
+      size: "",
+      img: "./20-img.jpg",
+      description: "Babero y calcetín + estrella",
+      category: "Others"
+    },
+    {
+      id: 21,
+      name: "Bolsa de tela y moño",
+      price: "$xxxx",
+      size: "",
+      img: "./21-img.jpg",
+      description: "Bolsa de tela Hola Mundo y moño",
+      category: "Others"
+    },
+    
+    { id: 22,
+      name: "Pullover",
+      price: "$xxxx",
+      size: "",
+      img: "./22-img.jpg",
+      description: "Pullover Oso Polar",
+      brand: "",
+      category: "Clothes"
+    },
+    
+    { id: 23,
+      name: "Mamadera con accesorios",
+      price: "$xxxx",
+      size: "",
+      img: "./23-img.jpg",
+      description: "Mamadera y accesorios",
+      brand: "Dispita",
+      category: "Clothes"
+    },
+  
+    {
+      id: 24,
+      name: "Caja 'Te quiero un monton",
+      price: "$xxxx",
+      size: "",
+      img: "./24-img.jpg",
+      description: "Perfume y talco de bebé",
+      category: "Others"
+    },
   ]

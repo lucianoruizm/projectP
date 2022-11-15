@@ -1,8 +1,12 @@
+.pagination-nav{
+    margin: 50px auto;
+}
+
 .pagination-container{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 50px auto;
+    padding: 0;
 }
 
 .page-item{
