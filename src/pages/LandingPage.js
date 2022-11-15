@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar"
 import Card from "../components/Card/Card"
 import Filter from "../components/Filter/Filter"
@@ -9,7 +9,18 @@ import './LandingPage.css';
 
 export const LandingPage = () => {
 
-  let [fetchedData, updateFetchedData] = useState([ ...productList]);
+  let [fetchedData, updateFetchedData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = () => {
+      setLoading(true);
+      const res = [ ...productList];
+      updateFetchedData(res);
+      setLoading(false);
+    }
+    fetchData()
+  }, [])
 
   function handleSearch(e) {
     const query = e.target.value;
@@ -59,7 +70,7 @@ export const LandingPage = () => {
             <Filter onFilter={handleFilter}/>
           </div>
           <div className="grid-container">
-            <Card results={fetchedData} />
+            <Card results={fetchedData} loading={loading} />
           </div>
         </div>
     </div>
