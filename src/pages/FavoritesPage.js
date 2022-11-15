@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FavoritesCard } from "../components/FavoritesCard/FavoritesCard";
 import logo from '../images/panaleraMibbLogo-removebg-preview.png';
