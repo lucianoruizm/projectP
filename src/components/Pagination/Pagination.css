@@ -1,0 +1,18 @@
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px auto;
+}
+
+.page-item{
+    border-radius: 5px;
+    background-color: var(--skyblue-color-cake);
+}
+.page-item:hover{
+    background-color: var(--main-color);
+}
+
+.page-link{
+    padding: 10px 20px;
+}

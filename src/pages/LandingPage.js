@@ -6,12 +6,15 @@ import Search from "../components/Search/Search"
 import SlideshowGallery from "../components/SlideshowGallery/SlideshowGallery"
 import { data as productList } from "../data";
 import './LandingPage.css';
+import { Pagination } from "../components/Pagination/Pagination";
 
 export const LandingPage = () => {
 
-  let [fetchedData, updateFetchedData] = useState([]);
+  const [fetchedData, updateFetchedData] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage] = useState(10);
+  
   useEffect(() => {
     const fetchData = () => {
       setLoading(true);
@@ -57,6 +60,14 @@ export const LandingPage = () => {
     }
   }
 
+  // Get current products for pagination
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = fetchedData.slice(indexOfFirstProduct, indexOfLastProduct);
+
+  // Chang page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
   return (
     <div>
         <Navbar />
@@ -70,9 +81,13 @@ export const LandingPage = () => {
             <Filter onFilter={handleFilter}/>
           </div>
           <div className="grid-container">
-            <Card results={fetchedData} loading={loading} />
+            <Card results={currentProducts} loading={loading} />
           </div>
         </div>
+        <Pagination 
+          productsPerPage={productsPerPage} 
+          totalProducts={fetchedData.length}
+          paginate={paginate} />
     </div>
   )
 }

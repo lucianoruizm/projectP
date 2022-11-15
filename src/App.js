@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/favoritos" element={<FavoritesPage />} />
