@@ -38,6 +38,7 @@ export const LandingPage = () => {
       });
 
       updateFetchedData(search);
+      setCurrentPage(1);
     } else {
       updateFetchedData(productList);
     }
@@ -55,6 +56,7 @@ export const LandingPage = () => {
       });
   
       updateFetchedData(filterCategory);
+      setCurrentPage(1);
     } else {
       updateFetchedData(productList);
     }
@@ -65,7 +67,7 @@ export const LandingPage = () => {
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = fetchedData.slice(indexOfFirstProduct, indexOfLastProduct);
 
-  // Chang page
+  // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
   return (
