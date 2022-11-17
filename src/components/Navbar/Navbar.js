@@ -5,7 +5,7 @@ import logo from '../../images/panaleraMibbLogo-removebg-preview.png';
 
 import './Navbar.css';
 
-const Navbar = () => {
+export const Navbar = () => {
 
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -58,5 +58,3 @@ const Navbar = () => {
     </>
   )
 }
-
-export default Navbar;

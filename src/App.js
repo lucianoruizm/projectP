@@ -6,8 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import Footer from "./components/Footer/Footer";
-import Contact from "./components/Contact/Contact";
+import {Footer} from "./components/Footer/Footer";
+import {Contact} from "./components/Contact/Contact";
 import { FavoritesPage } from "./pages/FavoritesPage";
 import { LandingPage } from './pages/LandingPage';
 import { ScrollToTop } from './components/ScrollToTop';

@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import './SlideshowGallery.css';
 import Carousel from 'react-bootstrap/Carousel';
 
-const ControlledCarousel = () => {
+export const SlideshowGallery = () => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -75,5 +75,3 @@ const ControlledCarousel = () => {
     </Carousel>
   );
 }
-
-export default ControlledCarousel;

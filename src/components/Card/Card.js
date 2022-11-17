@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
 import './Card.css';
+// import { CardModal } from "./CardModal";
 
-const Card = ({ results, loading }) => {
+export const Card = ({ results, loading }) => {
+
+  //Modal
+  // const [showModal, setShowModal] = useState(false);
+  ////
 
   // Favorites
   const [favs, setFavs] = useState([]);
@@ -45,7 +50,7 @@ const Card = ({ results, loading }) => {
         localStorage.removeItem('favItem' + (props.id));
       }
   }
-  // Favourites end--  
+  // Favourites end--
 
   let display;
   if (results) {
@@ -56,8 +61,7 @@ const Card = ({ results, loading }) => {
                 key={id}
                 className="cards-container"
               >
-                <div className="card"
-                >
+                <div className="card">
                     <img className="card-img" src={img} alt="" />
                     <div className="card-body">
                         <div className='heart'>
@@ -80,6 +84,7 @@ const Card = ({ results, loading }) => {
                             <div className="card-info"><strong>Descripción:</strong> {description}</div>
                         </div>
                     </div>
+                    {/* <CardModal showModal={showModal} setShowModal={setShowModal} id={id} name={name}  /> */}
                 </div>
               </div>
           );
@@ -90,5 +95,3 @@ const Card = ({ results, loading }) => {
     
   return <>{display}</>
 }
-
-export default Card;

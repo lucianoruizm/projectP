@@ -1,7 +1,7 @@
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import './Contact.css';
 
-const Contact = () => {
+export const Contact = () => {
 
     return(
     <div className="contact-section">
@@ -14,5 +14,3 @@ const Contact = () => {
     </div>
     )
 }
-
-export default Contact;

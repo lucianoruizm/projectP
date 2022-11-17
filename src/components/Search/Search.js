@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './Search.css';
 
-const Search = ({onSearch}) => {
+export const Search = ({onSearch}) => {
 
     const [value, setValue] = useState('')
     
@@ -21,5 +21,3 @@ const Search = ({onSearch}) => {
      </div>
     )
 }
-
-export default Search;

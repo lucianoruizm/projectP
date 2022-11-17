@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar/Navbar"
-import Card from "../components/Card/Card"
-import Filter from "../components/Filter/Filter"
-import Search from "../components/Search/Search"
-import SlideshowGallery from "../components/SlideshowGallery/SlideshowGallery"
+import {Navbar} from "../components/Navbar/Navbar"
+import {Card} from "../components/Card/Card"
+import {Filter} from "../components/Filter/Filter"
+import {Search} from "../components/Search/Search"
+import {SlideshowGallery} from "../components/SlideshowGallery/SlideshowGallery"
 import { data as productList } from "../data";
 import './LandingPage.css';
 import { Pagination } from "../components/Pagination/Pagination";

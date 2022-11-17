@@ -2,7 +2,7 @@
 import './Filter.css';
 
 
-const Filter = ({ onFilter }) => {
+export const Filter = ({ onFilter }) => {
   
     // const [value, setValue] = useState('')
 
@@ -37,5 +37,3 @@ const Filter = ({ onFilter }) => {
     </div>
   )
 }
-
-export default Filter;
