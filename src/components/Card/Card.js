@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
 import './Card.css';
-// import { CardModal } from "./CardModal";
+import { CardModal } from "./CardModal";
 
 export const Card = ({ results, loading }) => {
 
-  //Modal
-  // const [showModal, setShowModal] = useState(false);
-  ////
+  //modal states
+  const [showModal, setShowModal] = useState(false);
+  const [tempData, setTempData] = useState([]);
 
   // Favorites
   const [favs, setFavs] = useState([]);
@@ -52,6 +52,13 @@ export const Card = ({ results, loading }) => {
   }
   // Favourites end--
 
+  //modal function
+  const getData = (id, name, img) => {
+    let tempData = [id, name, img]
+    setTempData(item => [1, ...tempData])
+    return setShowModal(true)
+  }
+
   let display;
   if (results) {
       display = results.map((x) => {
@@ -61,7 +68,10 @@ export const Card = ({ results, loading }) => {
                 key={id}
                 className="cards-container"
               >
-                <div className="card">
+                <div 
+                  className="card" 
+                  onClick={() => getData(id, name, img)} 
+                >
                     <img className="card-img" src={img} alt="" />
                     <div className="card-body">
                         <div className='heart'>
@@ -84,8 +94,8 @@ export const Card = ({ results, loading }) => {
                             <div className="card-info"><strong>Descripción:</strong> {description}</div>
                         </div>
                     </div>
-                    {/* <CardModal showModal={showModal} setShowModal={setShowModal} id={id} name={name}  /> */}
                 </div>
+                {showModal ? <CardModal name={tempData[2]} img={tempData[3]} hideModal={()=>{setShowModal(false)}} /> : null}
               </div>
           );
       });
