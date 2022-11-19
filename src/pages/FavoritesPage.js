@@ -20,10 +20,6 @@ export const FavoritesPage = () => {
     exist = true;
   }
 
-  console.log(getArray);
-  console.log(favList);
-  console.log(exist);
-
   return (
     <div>
       <div className="logo-container">

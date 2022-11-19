@@ -38,8 +38,6 @@ export const Card = ({ results, loading }) => {
         array.push(props.id);
       }
       setFavs([...array])
-      console.log(addArray);
-      console.log(favs);
 
       localStorage.setItem("favorites", JSON.stringify(favs));
 
@@ -70,9 +68,8 @@ export const Card = ({ results, loading }) => {
               >
                 <div 
                   className="card" 
-                  onClick={() => getData(id, name, img)} 
                 >
-                    <img className="card-img" src={img} alt="" />
+                    <img className="card-img" src={img} alt="img" onClick={() => getData(id, name, img)} />
                     <div className="card-body">
                         <div className='heart'>
                             <div className="card-name">{name}</div>

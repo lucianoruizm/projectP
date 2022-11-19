@@ -1,35 +1,6 @@
 import './FavoritesCard.css';
 
-export const FavoritesCard = ({ results, exist, loading }) => {
-
-  // const onRemove = ( {id} ) => {
-    
-
-  //   // eslint-disable-next-line array-callback-return
-  //   // getArray.map((item, key) => {
-  //   //   if (item === id) {
-  //   //     getArray.splice(key, 1);
-  //   //   }
-  //   // });
-
-  //   localStorage.removeItem('favorites' + (id));
-  //   }
-
-  // const onRemove = (props) => {
-  //   localStorage.removeItem('favItem' + (props.id));
-  //   localStorage.removeItem('favorites' + (props.id));
-  // }
-
-  // const onRemove = (props) => {
-  //   const exist = results.find((x) => x.id === product.id);
-  //   if(exist.qty === 1) {
-  //     setresults(results.filter((x) => x.id !== product.id))
-  //   } else {
-  //     setresults(
-  //       results.map(x =>
-  //          x.id === product.id ? {...exist, qty: exist.qty -1} : x))
-  //   }
-  // }
+export const FavoritesCard = ({ results, exist }) => {
 
   let display;
   if(exist){
@@ -51,8 +22,7 @@ export const FavoritesCard = ({ results, exist, loading }) => {
                             <div className="card-info"><strong>Descripción:</strong> {description}</div>
                         </div>
                         <span 
-                          className='remove-item' 
-                          // onClick={() => onRemove({ id })} 
+                          className='remove-item'
                         >
                           Eliminar de favoritos
                         </span>

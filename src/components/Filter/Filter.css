@@ -74,7 +74,7 @@ button:hover {
 @media(min-width: 992px){
     .btn-container {
         flex-direction: column;
-        padding: 50px;
+        padding: 30px;
         gap: 20px;
     }
     button {

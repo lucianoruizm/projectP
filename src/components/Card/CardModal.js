@@ -1,3 +1,4 @@
+import './CardModal.css';
 
 export const CardModal = (props) => {
   let modalStyle = {
@@ -13,7 +14,7 @@ export const CardModal = (props) => {
             <button type="button" className="btn-close" onClick={props.hideModal}></button>
           </div>
           <div className="modal-body">
-            <img className="img-fluid" src={props.img} alt="img" />
+            <img className="img-fluid img-modal" src={props.img} alt="img" />
           </div>
         </div>
       </div>

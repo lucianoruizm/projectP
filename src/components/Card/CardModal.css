@@ -1,0 +1,46 @@
+.modal-content {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.btn-close {
+    border-radius: 3px;
+    min-width: 50px;
+}
+.btn-close:hover {
+    color: white;
+    background-color: var(--skyblue-color-cake);
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+@media (min-width: 425px){
+    .modal-content {
+        margin: 60px auto;
+    }
+}
+
+@media (min-width: 500px){
+    .modal-content {
+        width: 83%;
+        margin: 40px auto;
+    }
+}
+
+@media (min-width: 576px){
+    .modal-content {
+        width: 85%;
+        margin: auto;
+    }
+}
