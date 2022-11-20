@@ -13,7 +13,7 @@ Paquetes instalados:
 2. Boostrap
 3. React-icons
 
-El código es libre de copiarse para adaptarse a su proyecto.
+El código es libre de copiarse para adaptarse a su proyecto, exceptuando imagenes e información de contacto sujetos a "Pañalera Mi Bebé".
 
 # Getting Started with Create React App
 
