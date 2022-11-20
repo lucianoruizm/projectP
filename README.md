@@ -10,7 +10,7 @@ Funcionalidad:
 
 Paquetes instalados:
 1. React-router-dom
-2. Boostrap
+2. Bootstrap
 3. React-icons
 
 El código es libre de copiarse para adaptarse a su proyecto, exceptuando imagenes e información de contacto sujetos a "Pañalera Mi Bebé".
