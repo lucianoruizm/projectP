@@ -38,7 +38,7 @@ export const SlideshowGallery = () => {
 
         <Carousel.Caption>
           <div className="text-presentation-container">
-            <h3>¿Ya sabes que pañal vas a elegir para tu recién nacido?</h3>
+            <h3>¿Ya sabés que pañal vas a elegir para tu recién nacido?</h3>
             <p>En pañalera Mi Bebé, podés contar con diversas marcas.</p>
           </div>
         </Carousel.Caption>

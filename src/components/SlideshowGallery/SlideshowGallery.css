@@ -1,5 +1,7 @@
 .text-presentation-container {
-    padding: 10px;
+    background-color: var(--skyblue-color-cake);
+    opacity: .9;
+    padding: 15px 10px;
     border-radius: 5px;
 }
 

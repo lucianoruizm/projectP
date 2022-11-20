@@ -1,4 +1,19 @@
-Proyecto de React responsive design de productos presentados con cards, y un buscador por keywords. 
+Proyecto front-end de productos presentados en cards utilizando React.
+
+Funcionalidad:
+1. El usuario puede visualizar las cards de los diferentes productos.
+2. El usuario tiene la opción de agregar un producto a la sección de favoritos, estos se almacenan en el localstorage.
+3. Se puede realizar la búsqueda de un producto mediante el input search con keywords, y también el filtro mediante los buttons de las distintas categorías.
+4. Los productos estan divididos en paginación.
+5. Se encuentra información de contacto.
+6. El sitio web es responsive design.
+
+Paquetes instalados:
+1. React-router-dom
+2. Boostrap
+3. React-icons
+
+El código es libre de copiarse para adaptarse a su proyecto.
 
 # Getting Started with Create React App
 
