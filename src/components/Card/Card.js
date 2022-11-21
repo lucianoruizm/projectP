@@ -3,7 +3,7 @@ import { BsSuitHeartFill, BsSuitHeart } from 'react-icons/bs';
 import './Card.css';
 import { CardModal } from "./CardModal";
 
-export const Card = ({ results, loading }) => {
+export const Card = ({ results, loading, exist }) => {
 
   //modal states
   const [showModal, setShowModal] = useState(false);
@@ -58,7 +58,7 @@ export const Card = ({ results, loading }) => {
   }
 
   let display;
-  if (results) {
+  if (results && exist) {
       display = results.map((x) => {
           let { id, name, price, size, img, description } = x;
           return (
@@ -96,9 +96,11 @@ export const Card = ({ results, loading }) => {
               </div>
           );
       });
-  }else {
-      display = "No products Found :/";
+  } else {
+    display = "No products Found :/";
   }
-    
+
+ 
+   
   return <>{display}</>
 }

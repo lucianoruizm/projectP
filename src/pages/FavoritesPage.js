@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FavoritesCard } from "../components/FavoritesCard/FavoritesCard";
+import { Card } from "../components/Card/Card";
 import logo from '../images/panaleraMibbLogo-removebg-preview.png';
 import './FavoritesPage.css';
 
@@ -29,7 +29,7 @@ export const FavoritesPage = () => {
       </div>
       <h1 className="favs-title">Mis Favoritos</h1>
       <div className="grid-container">
-        <FavoritesCard results={favList} exist={exist} />
+        { exist? <Card results={favList} exist={exist} /> : <div className='message'>No se encuentra una lista de favoritos, podes agregar los productos haciendo click en su ❤</div>}
       </div>
     </div>
   )

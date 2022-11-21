@@ -14,12 +14,14 @@ export const LandingPage = () => {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(12);
+  const [exist, setExist] = useState(false)
   
   useEffect(() => {
     const fetchData = () => {
       setLoading(true);
       const res = [ ...productList];
       updateFetchedData(res);
+      setExist(true);
       setLoading(false);
     }
     fetchData()
@@ -83,7 +85,7 @@ export const LandingPage = () => {
             <Filter onFilter={handleFilter}/>
           </div>
           <div className="grid-container">
-            <Card results={currentProducts} loading={loading} />
+            <Card results={currentProducts} loading={loading} exist={exist} />
           </div>
         </div>
         <Pagination 
