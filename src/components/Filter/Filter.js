@@ -1,31 +1,6 @@
-// import { useState } from "react";
 import './Filter.css';
 
-
 export const Filter = ({ onFilter }) => {
-  
-    // const [value, setValue] = useState('')
-
-    // function handleClick (e){
-        // const op = e.target.name;
-        // setValue(e.target.value)
-        // switch (op) {
-        //     case "Diapers":
-        //         setValue("Diapers");
-        //         console.log("diapers")
-        //         break;
-        //     case "Crochet":
-        //         setValue("Crochet");
-        //         console.log("crochet")
-        //         break;
-        //     case "Clothes":
-        //         setValue("Clothes");
-        //         console.log("clothes")
-        //         break;
-        //     default:
-        // }
-    //     onFilter(e);
-    // }
 
     return (
     <div className="btn-container">

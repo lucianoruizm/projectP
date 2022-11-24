@@ -10,7 +10,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export const SlideshowGallery = () => {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
 

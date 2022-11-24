@@ -87,7 +87,7 @@ export const Card = ({ results, loading, exist }) => {
                         </div>
                         <div className="card-info-container">
                             <div className="card-info"><strong>Precio:</strong> {price}</div>
-                            {size? <div className="card-info"><strong>Tamaño</strong>: {size}</div> : ''}
+                            {size? <div className="card-info"><strong>Tamaño:</strong> {size}</div> : ''}
                             <div className="card-info"><strong>Descripción:</strong> {description}</div>
                         </div>
                     </div>
@@ -100,7 +100,5 @@ export const Card = ({ results, loading, exist }) => {
     display = "No products Found :/";
   }
 
- 
-   
   return <>{display}</>
 }

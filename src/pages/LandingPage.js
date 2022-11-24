@@ -4,9 +4,9 @@ import {Card} from "../components/Card/Card"
 import {Filter} from "../components/Filter/Filter"
 import {Search} from "../components/Search/Search"
 import {SlideshowGallery} from "../components/SlideshowGallery/SlideshowGallery"
+import { Pagination } from "../components/Pagination/Pagination";
 import { data as productList } from "../data";
 import './LandingPage.css';
-import { Pagination } from "../components/Pagination/Pagination";
 
 export const LandingPage = () => {
 
@@ -48,7 +48,6 @@ export const LandingPage = () => {
 
   function handleFilter(e) {
     const query = e.target.value;
-    console.log(query)
 
     if (!!query) {
       const filterCategory = productList.filter((product) => {
