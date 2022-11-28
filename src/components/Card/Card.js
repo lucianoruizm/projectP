@@ -27,12 +27,12 @@ export const Card = ({ results, loading, exist }) => {
   const onAdd = (props) => {
       let array = favs;
       let addArray = true;
-      // eslint-disable-next-line array-callback-return
       array.map((item, key) => {
         if (item === props.id) {
           array.splice(key, 1);
           addArray = false;
         }
+        return addArray;
       });
       if (addArray) {
         array.push(props.id);
