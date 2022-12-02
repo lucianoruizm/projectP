@@ -9,9 +9,10 @@ Funcionalidad:
 6. El sitio web es responsive design.
 
 Paquetes instalados:
-1. React-router-dom
-2. Bootstrap
-3. React-icons
+1. React-router-dom ---> npm install react-router-dom
+2. Bootstrap ---> npm install react-bootstrap bootstrap
+3. React-icons ---> npm install react-icons
+4. Hamburger-react ---> npm install hamburger-react
 
 El código es libre de copiarse para adaptarse a su proyecto, exceptuando imagenes e información de contacto sujetos a "Pañalera Mi Bebé".
 
