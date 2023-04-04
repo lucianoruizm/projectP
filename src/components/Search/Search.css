@@ -12,12 +12,13 @@
     border-radius: 5px;
     padding: 12px;
     outline: none;
-    color: black;
+    color: var(--white);
     background-color: var(--skyblue-color-cake);
 }
 
 .input-search:focus{
-    background-color: #9d9aaf;
+    background-color: #94afc4;
+    transition: background-color 350ms linear;
 }
 
 input::placeholder {

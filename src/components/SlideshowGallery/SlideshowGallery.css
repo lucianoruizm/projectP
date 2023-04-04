@@ -1,3 +1,56 @@
+.headMainContainer {
+    padding: 100px 20px 35px;
+    background-color: #ddbfe1;
+    text-align: center;
+    background-image: url(../../images/bg6.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.mainTitle {
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+p {
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.items {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: #c6bfe18e;
+    border-radius: 50%;
+}
+
+.items h4 p {
+    transition: transform 0.3s ease-out;
+}
+
+.items:hover {
+    transform: scale(1.1);
+    transition: background-color 350ms linear;
+}
+
+/* --main-color: #ff0080;
+  --main-color-pink: #f55ea9;
+  --main-color-dark: #9c014ff5;
+  --skyblue-color-cake: #c6bfe1;
+  --secondary-color: #9d03fc;
+  --secondary-color-opacity: #9d03fc88;
+  --skyblue-color: #5bbbd9;
+  --grayish-blue: hsl(220, 14%, 75%);
+  --white: #f8feff;
+  --white-glass: #f8feff69; */
+
 .text-presentation-container {
     background-color: var(--skyblue-color-cake);
     opacity: .9;
@@ -9,35 +62,69 @@ h3 {
     font-size: 1.3em;
 }
 
-p {
-    font-size: 1em;
-}
-
 .w-100 {
     margin: 60px auto auto;
     height: 400px;
 }
 
-@media (min-width: 435px){
+@media (min-width: 450px){
     h3 {
         font-size: 2em;
     }
     p {
-        font-size: 1em;
+        font-size: .9em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    .w-100 {
+        margin-top: 40px;
+        height: 200px;
+    }
+    .items {
+        margin: auto 20px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 635px){
+    .gridTitles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    p {
+        font-size: .9em;
+    }
+    h4 {
+        font-size: 1.2em;
     }
     .w-100 {
         margin-top: 40px;
         height: 600px;
     }
+    .items {
+        margin: auto 10px;
+        height: 170px;
+    }
 }
 
 @media (min-width: 992px){
+    .gridTitles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     h3 {
         font-size: 2.5em;
         font-weight: bolder;
     }
+    h4 {
+        font-size: 1.5em;
+    }
     p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     .w-100 {
         margin-top: 0;
@@ -45,5 +132,9 @@ p {
     }
     .carousel-inner {
         margin: auto;
+    }
+    .items {
+        margin: auto 30px;
+        height: 200px;
     }
 }
