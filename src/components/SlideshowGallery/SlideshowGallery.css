@@ -1,5 +1,5 @@
 .headMainContainer {
-    padding: 100px 20px 35px;
+    padding: 176px 28px 200px;
     background-color: #ddbfe1;
     text-align: center;
     background-image: url(../../images/bg6.png);
@@ -9,7 +9,15 @@
 }
 
 .mainTitle {
-    padding-bottom: 50px;
+    font-size: 1.3em;
+    padding-bottom: 100px;
+    color: #3B393A;
+    text-shadow: -3px 1px 7px #7d7d808a;
+    font-weight: bold;
+}
+
+.mainTitle p {
+    font-size: .6em;
 }
 
 h4 {
@@ -21,14 +29,17 @@ p {
     font-size: .8em;
 }
 
+.gridTitles {
+    margin-bottom: 50px;
+}
+
 .items {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    background-color: #c6bfe18e;
-    border-radius: 50%;
+    color: #3B393A;
+    text-shadow: -3px 1px 7px #7d7d808a;
 }
 
 .items h4 p {
@@ -68,8 +79,11 @@ h3 {
 }
 
 @media (min-width: 450px){
-    h3 {
-        font-size: 2em;
+    .mainTitle {
+        font-size: 1.4em;
+    }
+    .mainTitle p {
+        font-size: .7em;
     }
     p {
         font-size: .9em;
@@ -88,12 +102,15 @@ h3 {
 }
 
 @media (min-width: 635px){
+    .mainTitle {
+        font-size: 2em;
+    }
+    .mainTitle p {
+        font-size: .5em;
+    }
     .gridTitles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    h3 {
-        font-size: 2em;
     }
     p {
         font-size: .9em;
@@ -112,13 +129,15 @@ h3 {
 }
 
 @media (min-width: 992px){
+    .mainTitle {
+        font-size: 2.5em;
+    }
+    .mainTitle p {
+        font-size: .6em;
+    }
     .gridTitles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    h3 {
-        font-size: 2.5em;
-        font-weight: bolder;
     }
     h4 {
         font-size: 1.5em;

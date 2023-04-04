@@ -77,7 +77,6 @@ export const LandingPage = () => {
         <div id="gallery">
           <SlideshowGallery />
         </div>
-        <h1 id="h1">Nuestros Productos</h1>
         <Search onSearch={handleSearch} />
         <div className="filter-cards-containers">
           <div className="filter-container">

@@ -22,6 +22,7 @@ export const SlideshowGallery = () => {
             <p>Desde gorros hasta peluches.</p>
           </div>
         </div>
+        <h1 id="h1">↓ Nuestros Productos ↓</h1>
     </div>
   );
 }
