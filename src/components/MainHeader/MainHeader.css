@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .headMainContainer {
-    padding: 176px 28px 200px;
+    padding: 125px 0px 0px 0px;
     background-color: #ddbfe1;
     text-align: center;
     background-image: url(../../images/bg6.png);
@@ -9,7 +12,6 @@
 }
 
 .mainTitle {
-    font-size: 1.3em;
     padding-bottom: 100px;
     color: #3B393A;
     text-shadow: -3px 1px 7px #7d7d808a;
@@ -17,7 +19,38 @@
 }
 
 .mainTitle p {
-    font-size: .6em;
+    font-size: .9em;
+    padding: 10px;
+}
+
+.principalTitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid1 {
+    color: var(--main-color-pink);
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.grid2 {
+    padding: 0;
+    margin: 0 0 50px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+    grid-column-start: 2; 
+    grid-column-end: 2; 
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 h4 {
@@ -25,12 +58,15 @@ h4 {
 }
 
 p {
+    color: #65635D;
     font-weight: 500;
     font-size: .8em;
+    text-shadow: none;
 }
 
 .gridTitles {
     margin-bottom: 50px;
+    padding: 0 10px;
 }
 
 .items {
@@ -62,11 +98,9 @@ p {
   --white: #f8feff;
   --white-glass: #f8feff69; */
 
-.text-presentation-container {
-    background-color: var(--skyblue-color-cake);
-    opacity: .9;
-    padding: 15px 10px;
-    border-radius: 5px;
+h1 {
+    font-size: 1em;
+    padding-bottom: 30px;
 }
 
 h3 {
@@ -78,12 +112,26 @@ h3 {
     height: 400px;
 }
 
+@media (max-width: 300px){
+    .principalTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (min-width: 450px){
-    .mainTitle {
-        font-size: 1.4em;
+    .headMainContainer {
+        padding: 176px 28px 200px;
+    }
+    .grid1 {
+        font-size: 2.3em;
+    }
+    .grid2 {
+        font-size: 2.4em;
     }
     .mainTitle p {
-        font-size: .7em;
+        font-size: 1em;
     }
     p {
         font-size: .9em;
@@ -99,14 +147,24 @@ h3 {
         margin: auto 20px;
         height: 120px;
     }
+    h1 {
+        font-size: 1.3em;
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 635px){
-    .mainTitle {
-        font-size: 2em;
+    .headMainContainer {
+        padding: 176px 28px 200px;
+    }
+    .grid1 {
+        font-size: 2.8em;
+    }
+    .grid2 {
+        font-size: 3em;
     }
     .mainTitle p {
-        font-size: .5em;
+        font-size: 1.2em;
     }
     .gridTitles {
         display: grid;
@@ -126,14 +184,24 @@ h3 {
         margin: auto 10px;
         height: 170px;
     }
+    h1 {
+        font-size: 1.7em;
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 992px){
-    .mainTitle {
-        font-size: 2.5em;
+    .headMainContainer {
+        padding: 176px 28px 200px;
+    }
+    .grid1 {
+        font-size: 5em;
+    }
+    .grid2 {
+        font-size: 5em;
     }
     .mainTitle p {
-        font-size: .6em;
+        font-size: 1.7em;
     }
     .gridTitles {
         display: grid;
@@ -155,5 +223,10 @@ h3 {
     .items {
         margin: auto 30px;
         height: 200px;
+    }
+    h1 {
+        font-size: 2em;
+        margin-top: 100px;
+        padding-bottom: 7px;
     }
 }

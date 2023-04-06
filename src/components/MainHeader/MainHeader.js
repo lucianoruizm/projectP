@@ -1,12 +1,15 @@
-import './SlideshowGallery.css';
+import './MainHeader.css';
 
-export const SlideshowGallery = () => {
+export const MainHeader = () => {
 
   return (
     <div className='headMainContainer'>
         <div className='mainTitle'>
-           <h3>Bienvenidos a Pañalera Mi Bebé!</h3>
-           <p>Pañales, ropa y accesorios para los más pequeñitos.</p>
+           <div className="principalTitle">
+             <h3 className='grid1'>Pañalera</h3>
+             <h3 className='grid2'>Mi Bebé</h3>
+           </div>
+           <p>Pañales, ropa y accesorios para los más pequeñitos</p>
         </div>
         <div className="gridTitles">
           <div className='items'>
