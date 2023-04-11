@@ -67,6 +67,9 @@ p {
 .gridTitles {
     margin-bottom: 50px;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .items {
@@ -74,8 +77,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #3B393A;
+    color: var(--white);
     text-shadow: -3px 1px 7px #7d7d808a;
+    background-color: #5bbbd994;
+    border-radius: 15px;
+    text-align: left;
 }
 
 .items h4 p {
@@ -83,7 +89,7 @@ p {
 }
 
 .items:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: background-color 350ms linear;
 }
 
@@ -118,6 +124,22 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
+    .gridTitles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 301px){
+    p {
+        font-size: .7em;
+        padding: 0 20px 0;
+    }
+    h4 {
+        font-size: .8em;
+        padding: 10px 20px 0;
+    }
 }
 
 @media (min-width: 450px){
@@ -135,13 +157,20 @@ h3 {
     }
     p {
         font-size: .9em;
+        padding: 0 20px 0;
     }
     h4 {
         font-size: 1.1em;
+        padding: 10px 20px 0;
     }
     .w-100 {
         margin-top: 40px;
         height: 200px;
+    }
+    .gridTitles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     .items {
         margin: auto 20px;
@@ -155,7 +184,7 @@ h3 {
 
 @media (min-width: 635px){
     .headMainContainer {
-        padding: 176px 28px 200px;
+        padding: 176px 30px 200px;
     }
     .grid1 {
         font-size: 2.8em;
@@ -171,10 +200,12 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
     p {
-        font-size: .9em;
+        font-size: .8em;
+        padding: 0 20px 0;
     }
     h4 {
-        font-size: 1.2em;
+        font-size: 1em;
+        padding: 10px 20px 0;
     }
     .w-100 {
         margin-top: 40px;
@@ -182,7 +213,7 @@ h3 {
     }
     .items {
         margin: auto 10px;
-        height: 170px;
+        height: 200px;
     }
     h1 {
         font-size: 1.7em;
@@ -208,10 +239,12 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
     h4 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        padding: 10px 20px 0;
     }
     p {
-        font-size: 1.1em;
+        font-size: 1em;
+        padding: 0 20px 0;
     }
     .w-100 {
         margin-top: 0;
