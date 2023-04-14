@@ -63,6 +63,23 @@ export const LandingPage = () => {
     }
   }
 
+  function handleFilterDiv(event, value) {
+    const query = value;
+
+    if (!!query) {
+      const filterCategory = productList.filter((product) => {
+        return (
+          product.category.includes(query)
+        );
+      });
+  
+      updateFetchedData(filterCategory);
+      setCurrentPage(1);
+    } else {
+      updateFetchedData(productList);
+    }
+  }
+
   // Get current products for pagination
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -75,7 +92,7 @@ export const LandingPage = () => {
     <div>
         <Navbar />
         <div id="gallery">
-          <MainHeader />
+          <MainHeader onFilter={handleFilterDiv}/>
         </div>
         <Search onSearch={handleSearch} />
         <div className="filter-cards-containers">

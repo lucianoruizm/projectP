@@ -1,6 +1,6 @@
 import './MainHeader.css';
 
-export const MainHeader = () => {
+export const MainHeader = ({ onFilter }) => {
 
   return (
     <div className='headMainContainer'>
@@ -12,15 +12,15 @@ export const MainHeader = () => {
            <p>Pañales, ropa y accesorios para los más pequeñitos</p>
         </div>
         <div className="gridTitles">
-          <div className='items'>
+          <div className='items' onClick={(event) => onFilter(event, 'Diapers')}>
             <h4>¿Ya sabés que pañal vas a elegir para tu recién nacido?</h4>
             <p>En pañalera Mi Bebé, podés contar con diversas marcas.</p>
           </div>
-          <div className='items'>
+          <div className='items' onClick={(event) => onFilter(event, 'Clothes')}>
             <h4>Ropa para tu pequeño/a!</h4>
             <p>Encontra el conjunto que mejor se adapte.</p>
           </div>
-          <div className='items'>
+          <div className='items' onClick={(event) => onFilter(event, 'Crochet')}>
             <h4>También contamos con los mejores tejidos!</h4>
             <p>Desde gorros hasta peluches.</p>
           </div>
