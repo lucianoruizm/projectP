@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 .headMainContainer {
-    padding: 125px 0px 0px 0px;
+    padding: 125px 0px 160px 0px;
     background-color: #ddbfe1;
     text-align: center;
     background-image: url(../../images/bg6.png);
     background-repeat: no-repeat;
     position: relative;
-    background-size: 100% 100%;
+    background-size: 150% 100%;
 }
 
 .mainTitle {
@@ -144,7 +144,7 @@ h3 {
 
 @media (min-width: 450px){
     .headMainContainer {
-        padding: 176px 28px 200px;
+        background-size: 150% 100%;
     }
     .grid1 {
         font-size: 2.3em;
@@ -184,7 +184,8 @@ h3 {
 
 @media (min-width: 635px){
     .headMainContainer {
-        padding: 176px 30px 200px;
+        padding: 120px 10px 100px;
+        background-size: 100% 100%;
     }
     .grid1 {
         font-size: 2.8em;
@@ -223,7 +224,8 @@ h3 {
 
 @media (min-width: 992px){
     .headMainContainer {
-        padding: 176px 28px 200px;
+        padding: 150px 20px 80px;
+        background-size: 100% 100%;
     }
     .grid1 {
         font-size: 5em;
