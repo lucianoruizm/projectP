@@ -60,7 +60,8 @@ export const Card = ({ results, loading, exist }) => {
   let display;
   if (results && exist) {
       display = results.map((x) => {
-          let { id, name, price, size, img, description } = x;
+        // price, size, se quitan temporalmente
+          let { id, name, img, description } = x;
           return (
               <div 
                 key={id}
@@ -86,8 +87,8 @@ export const Card = ({ results, loading, exist }) => {
                               )}
                         </div>
                         <div className="card-info-container">
-                            <div className="card-info"><strong>Precio:</strong> {price}</div>
-                            {size? <div className="card-info"><strong>Tamaño:</strong> {size}</div> : ''}
+                            {/* <div className="card-info"><strong>Precio:</strong> {price}</div>
+                            {size? <div className="card-info"><strong>Tamaño:</strong> {size}</div> : ''} */}
                             <div className="card-info"><strong>Descripción:</strong> {description}</div>
                         </div>
                     </div>

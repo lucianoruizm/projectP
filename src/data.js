@@ -25,7 +25,7 @@ export const data = [
       price: "$xxxx",
       size: "20 cm",
       img: "./03-img.jpg",
-      description: "Conejos de tejido",
+      description: "Conejos de lana artesales",
       category: "Crochet"
     },
     
@@ -130,7 +130,7 @@ export const data = [
       price: "$xxxx",
       size: "",
       img: "./14-img.jpeg",
-      description: "Babero para bebé",
+      description: "Con dibujos!",
       brand: "",
       category: "Others"
     },
@@ -169,7 +169,7 @@ export const data = [
       price: "$xxxx",
       size: "xg",
       img: "./18-img.jpg",
-      description: "Pañales",
+      description: "Pañales XG",
       brand: "Huggies",
       category: "Diapers"
     },
@@ -179,7 +179,7 @@ export const data = [
       price: "$xxxx",
       size: "xg",
       img: "./19-img.jpg",
-      description: "Pañales",
+      description: "Pañales XG",
       brand: "Estrella",
       category: "Diapers"
     },
