@@ -78,6 +78,10 @@ export const LandingPage = () => {
     } else {
       updateFetchedData(productList);
     }
+    const element = document.getElementById('grid-products');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   // Get current products for pagination
@@ -99,7 +103,7 @@ export const LandingPage = () => {
           <div className="filter-container">
             <Filter onFilter={handleFilter}/>
           </div>
-          <div className="grid-container">
+          <div className="grid-container" id="grid-products">
             <Card results={currentProducts} loading={loading} exist={exist} />
           </div>
         </div>
